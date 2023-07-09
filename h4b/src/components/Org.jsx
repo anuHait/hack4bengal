@@ -3,7 +3,6 @@ import { InfoCircle } from "iconsax-react";
 import { ArrowDown } from "iconsax-react";
 import { BsFillCloudArrowUpFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import grad from "../assets/grad.png";
 import logo1 from "../assets/logo1.png";
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png"
@@ -69,7 +68,7 @@ const Hospital = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className="p-3 bg-primary font-poppins text-white font-regular text-lg lg:text-[1.4rem] rounded-lg hover:bg-[#1A31CC] transition duration-250"
+          className="p-3 bg-primary font-poppins text-white font-regular text-lg lg:text-[1.2rem] rounded-lg hover:bg-[#1A31CC] transition duration-250"
         >
           Train Model
         </button>
