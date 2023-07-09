@@ -9,6 +9,7 @@ import Org from "./components/Org"
 import Navbar from "./components/Navbar";
  import Download from "./pages/Download";
 import "./App.css";
+import Uptrain from "./pages/Uptrain";
 //import Aggregate from "./components/Aggregate";
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
    <Route path="/user" element={<User />}></Route>
     <Route path="/hospital" element={<Org />}></Route>
     <Route path="/get-app" element={<Download />}></Route>
+    <Route path="/upload-trained-model" element={<Uptrain />}></Route>
+
       </Routes>
     </div>
     </>
