@@ -33,7 +33,7 @@ const Aggregate = () => {
       <img src={logo} alt="logo" className='w-auto p-5 pr-0 h-20'/>
       <h1 className='font-bold text-2xl font-poppins'>EDIC.<span className='text-primary'>AI</span></h1>
     </Link>
-    <div className='flex flex-row gap-4 mr-10'>
+    <div className='flex flex-row gap-4 mr-4 lg:mr-10'>
       <Link to='/'>
         <p className='text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>Services</p>
       </Link>
