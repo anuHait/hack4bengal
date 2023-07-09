@@ -11,6 +11,11 @@ def hello_world():
 
 @app.route('/predict/<s1>/<s2>/<s3>/<s4>/<s5>')
 def predictD2isease(s1,s2,s3,s4,s5):
+    s1.replace(" ", "_")
+    s2.replace(" ", "_")
+    s3.replace(" ", "_")
+    s4.replace(" ", "_")
+    s5.replace(" ", "_")
     symptomNames=[s1,s2,s3,s4,s5]
     symptoms = convertSymptomsToArray(symptomNames)
 
