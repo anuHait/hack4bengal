@@ -1,0 +1,530 @@
+[
+    {
+       "id":1,
+       "label":"abdominal pain"
+    },
+    {
+       "id":2,
+       "label":"abnormal menstruation"
+    },
+    {
+       "id":3,
+       "label":"acidity"
+    },
+    {
+       "id":4,
+       "label":"acute liver failure"
+    },
+    {
+       "id":5,
+       "label":"altered sensorium"
+    },
+    {
+       "id":6,
+       "label":"anxiety"
+    },
+    {
+       "id":7,
+       "label":"back pain"
+    },
+    {
+       "id":8,
+       "label":"belly pain"
+    },
+    {
+       "id":9,
+       "label":"blackheads"
+    },
+    {
+       "id":10,
+       "label":"bladder discomfort"
+    },
+    {
+       "id":11,
+       "label":"blister"
+    },
+    {
+       "id":12,
+       "label":"blood in sputum"
+    },
+    {
+       "id":13,
+       "label":"bloody stool"
+    },
+    {
+       "id":14,
+       "label":"blurred and distorted vision"
+    },
+    {
+       "id":15,
+       "label":"breathlessness"
+    },
+    {
+       "id":16,
+       "label":"brittle nails"
+    },
+    {
+       "id":17,
+       "label":"bruising"
+    },
+    {
+       "id":18,
+       "label":"burning micturition"
+    },
+    {
+       "id":19,
+       "label":"chest pain"
+    },
+    {
+       "id":20,
+       "label":"chills"
+    },
+    {
+       "id":21,
+       "label":"cold hands and feets"
+    },
+    {
+       "id":22,
+       "label":"coma"
+    },
+    {
+       "id":23,
+       "label":"congestion"
+    },
+    {
+       "id":24,
+       "label":"constipation"
+    },
+    {
+       "id":25,
+       "label":"continuous feel of urine"
+    },
+    {
+       "id":26,
+       "label":"continuous sneezing"
+    },
+    {
+       "id":27,
+       "label":"cough"
+    },
+    {
+       "id":28,
+       "label":"cramps"
+    },
+    {
+       "id":29,
+       "label":"dark urine"
+    },
+    {
+       "id":30,
+       "label":"dehydration"
+    },
+    {
+       "id":31,
+       "label":"depression"
+    },
+    {
+       "id":32,
+       "label":"diarrhoea"
+    },
+    {
+       "id":33,
+       "label":"dischromic  patches"
+    },
+    {
+       "id":34,
+       "label":"distention of abdomen"
+    },
+    {
+       "id":35,
+       "label":"dizziness"
+    },
+    {
+       "id":36,
+       "label":"drying and tingling lips"
+    },
+    {
+       "id":37,
+       "label":"enlarged thyroid"
+    },
+    {
+       "id":38,
+       "label":"excessive hunger"
+    },
+    {
+       "id":39,
+       "label":"extra marital contacts"
+    },
+    {
+       "id":40,
+       "label":"family history"
+    },
+    {
+       "id":41,
+       "label":"fast heart rate"
+    },
+    {
+       "id":42,
+       "label":"fatigue"
+    },
+    {
+       "id":43,
+       "label":"fluid overload"
+    },
+    {
+       "id":44,
+       "label":"fluid overload.1"
+    },
+    {
+       "id":45,
+       "label":"foul smell of urine"
+    },
+    {
+       "id":46,
+       "label":"headache"
+    },
+    {
+       "id":47,
+       "label":"high fever"
+    },
+    {
+       "id":48,
+       "label":"hip joint pain"
+    },
+    {
+       "id":49,
+       "label":"history of alcohol consumption"
+    },
+    {
+       "id":50,
+       "label":"increased appetite"
+    },
+    {
+       "id":51,
+       "label":"indigestion"
+    },
+    {
+       "id":52,
+       "label":"inflammatory nails"
+    },
+    {
+       "id":53,
+       "label":"internal itching"
+    },
+    {
+       "id":54,
+       "label":"irregular sugar level"
+    },
+    {
+       "id":55,
+       "label":"irritability"
+    },
+    {
+       "id":56,
+       "label":"irritation in anus"
+    },
+    {
+       "id":57,
+       "label":"itching"
+    },
+    {
+       "id":58,
+       "label":"joint pain"
+    },
+    {
+       "id":59,
+       "label":"knee pain"
+    },
+    {
+       "id":60,
+       "label":"lack of concentration"
+    },
+    {
+       "id":61,
+       "label":"lethargy"
+    },
+    {
+       "id":62,
+       "label":"loss of appetite"
+    },
+    {
+       "id":63,
+       "label":"loss of balance"
+    },
+    {
+       "id":64,
+       "label":"loss of smell"
+    },
+    {
+       "id":65,
+       "label":"malaise"
+    },
+    {
+       "id":66,
+       "label":"mild fever"
+    },
+    {
+       "id":67,
+       "label":"mood swings"
+    },
+    {
+       "id":68,
+       "label":"movement stiffness"
+    },
+    {
+       "id":69,
+       "label":"mucoid sputum"
+    },
+    {
+       "id":70,
+       "label":"muscle pain"
+    },
+    {
+       "id":71,
+       "label":"muscle wasting"
+    },
+    {
+       "id":72,
+       "label":"muscle weakness"
+    },
+    {
+       "id":73,
+       "label":"nausea"
+    },
+    {
+       "id":74,
+       "label":"neck pain"
+    },
+    {
+       "id":75,
+       "label":"nodal skin eruptions"
+    },
+    {
+       "id":76,
+       "label":"obesity"
+    },
+    {
+       "id":77,
+       "label":"pain behind the eyes"
+    },
+    {
+       "id":78,
+       "label":"pain during bowel movements"
+    },
+    {
+       "id":79,
+       "label":"pain in anal region"
+    },
+    {
+       "id":80,
+       "label":"painful walking"
+    },
+    {
+       "id":81,
+       "label":"palpitations"
+    },
+    {
+       "id":82,
+       "label":"passage of gases"
+    },
+    {
+       "id":83,
+       "label":"patches in throat"
+    },
+    {
+       "id":84,
+       "label":"phlegm"
+    },
+    {
+       "id":85,
+       "label":"polyuria"
+    },
+    {
+       "id":86,
+       "label":"prominent veins on calf"
+    },
+    {
+       "id":87,
+       "label":"puffy face and eyes"
+    },
+    {
+       "id":88,
+       "label":"pus filled pimples"
+    },
+    {
+       "id":89,
+       "label":"receiving blood transfusion"
+    },
+    {
+       "id":90,
+       "label":"receiving unsterile injections"
+    },
+    {
+       "id":91,
+       "label":"red sore around nose"
+    },
+    {
+       "id":92,
+       "label":"red spots over body"
+    },
+    {
+       "id":93,
+       "label":"redness of eyes"
+    },
+    {
+       "id":94,
+       "label":"restlessness"
+    },
+    {
+       "id":95,
+       "label":"runny nose"
+    },
+    {
+       "id":96,
+       "label":"rusty sputum"
+    },
+    {
+       "id":97,
+       "label":"scurring"
+    },
+    {
+       "id":98,
+       "label":"shivering"
+    },
+    {
+       "id":99,
+       "label":"silver like dusting"
+    },
+    {
+       "id":100,
+       "label":"sinus pressure"
+    },
+    {
+       "id":101,
+       "label":"skin peeling"
+    },
+    {
+       "id":102,
+       "label":"skin rash"
+    },
+    {
+       "id":103,
+       "label":"slurred speech"
+    },
+    {
+       "id":104,
+       "label":"small dents in nails"
+    },
+    {
+       "id":105,
+       "label":"spinning movements"
+    },
+    {
+       "id":106,
+       "label":"spotting  urination"
+    },
+    {
+       "id":107,
+       "label":"stiff neck"
+    },
+    {
+       "id":108,
+       "label":"stomach bleeding"
+    },
+    {
+       "id":109,
+       "label":"stomach pain"
+    },
+    {
+       "id":110,
+       "label":"sunken eyes"
+    },
+    {
+       "id":111,
+       "label":"sweating"
+    },
+    {
+       "id":112,
+       "label":"swelled lymph nodes"
+    },
+    {
+       "id":113,
+       "label":"swelling joints"
+    },
+    {
+       "id":114,
+       "label":"swelling of stomach"
+    },
+    {
+       "id":115,
+       "label":"swollen blood vessels"
+    },
+    {
+       "id":116,
+       "label":"swollen extremeties"
+    },
+    {
+       "id":117,
+       "label":"swollen legs"
+    },
+    {
+       "id":118,
+       "label":"throat irritation"
+    },
+    {
+       "id":119,
+       "label":"toxic look (typhos)"
+    },
+    {
+       "id":120,
+       "label":"ulcers on tongue"
+    },
+    {
+       "id":121,
+       "label":"unsteadiness"
+    },
+    {
+       "id":122,
+       "label":"visual disturbances"
+    },
+    {
+       "id":123,
+       "label":"vomiting"
+    },
+    {
+       "id":124,
+       "label":"watering from eyes"
+    },
+    {
+       "id":125,
+       "label":"weakness in limbs"
+    },
+    {
+       "id":126,
+       "label":"weakness of one body side"
+    },
+    {
+       "id":127,
+       "label":"weight gain"
+    },
+    {
+       "id":128,
+       "label":"weight loss"
+    },
+    {
+       "id":129,
+       "label":"yellow crust ooze"
+    },
+    {
+       "id":130,
+       "label":"yellow urine"
+    },
+    {
+       "id":131,
+       "label":"yellowing of eyes"
+    },
+    {
+       "id":132,
+       "label":"yellowish skin"
+    }
+ ]

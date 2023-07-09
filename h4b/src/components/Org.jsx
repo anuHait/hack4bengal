@@ -3,9 +3,10 @@ import { InfoCircle } from "iconsax-react";
 import { ArrowDown } from "iconsax-react";
 import { BsFillCloudArrowUpFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import grad from "../assets/grad.png";
 import logo1 from "../assets/logo1.png";
 import { useState, useEffect } from "react";
+import logo from "../assets/logo.png"
+
 
 const Hospital = () => {
   
@@ -22,22 +23,18 @@ const Hospital = () => {
   };
   return (
     <div>
-      <div
-        className=" flex flex-row justify-between items-center bg-cover bg-no-repeat bg-center w-[99%]  mt-[0.5%] ml-[0.5%] overflow-auto rounded-t-lg  "
-        style={{ backgroundImage: `url(${grad})` }}
-      >
-        <Link to="/">
-          <h1 className=" font-khand font-bold text-black text-4xl m-6">
-            MEDIC.<span className=" text-primary">AI</span>
-          </h1>
-        </Link>
+      <div className="flex flex-row justify-between items-center bg-cover bg-no-repeat bg-center h-24 mt-[0.5%] ml-[0.5%] overflow-hidden rounded-t-lg bg-gradient-to-b from-purple-300">
+    <Link to='/' className='flex justify-center items-center gap-1'>
+      <img src={logo} alt="logo" className='w-auto p-5 pr-0 h-20'/>
+      <h1 className='font-bold text-2xl font-poppins'>EDIC.<span className='text-primary'>AI</span></h1>
+    </Link>
         <div className=" flex flex-row gap-4 mr-10">
           <Link to="/">
-            <p className=" text-xl">Services</p>
+            <p className="text-lg text-gray-700 hover:text-black lg:text-lg font-poppins">Services</p>
           </Link>
           <h2 className=" text-xl">/</h2>
           <Link to="/">
-            <p className=" text-xl">About & Contact</p>
+            <p className="text-lg text-gray-700 hover:text-black lg:text-lg font-poppins">About & Contact</p>
           </Link>
         </div>
       </div>
@@ -46,13 +43,13 @@ const Hospital = () => {
           Head over to your PC
         </h1>
         <div className="flex flex-row gap-6 lg:gap-16 justify-between items-center">
-          <h1 className="font-bold text-3xl lg:text-5xl mb-4">
-            Get your own Model
+          <h1 className="font-bold text-3xl lg:text-5xl mb-10 font-poppins">
+            Get your own Model.
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center bg-indigo-300 rounded-lg lg:w-[28rem] w-[21rem] h-[12rem] lg:h-[16rem] p-4 text-white font-bold">
-          <h1 className="text-xl lg:text-2xl mb-6 mt-2">Upload your Dataset</h1>
-          <div className="border-dashed border-white p-5 border-2">
+        <div className="flex flex-col mb-4 justify-center items-center bg-indigo-300 rounded-lg lg:w-[28rem] w-[21rem] h-[12rem] lg:h-[16rem] text-white ">
+          <h1 className="text-xl font-semibold lg:text-2xl mb-6 mt-2 font-poppins">Upload your Dataset</h1>
+          <div className="border-dashed border-white p-7 border-2 rounded-md mb-4">
             <label
               htmlFor="file-upload"
               id="upload-label"
@@ -71,7 +68,7 @@ const Hospital = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className="p-2 bg-primary text-white font-semibold text-[0.8rem] lg:text-[1.4rem] rounded-lg"
+          className="p-3 bg-primary font-poppins text-white font-regular text-lg lg:text-[1.2rem] rounded-lg hover:bg-[#1A31CC] transition duration-250"
         >
           Train Model
         </button>
