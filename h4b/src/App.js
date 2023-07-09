@@ -3,11 +3,11 @@ import Landing from "./pages/Landing";
 import DownBar from "./components/Downbar";
 import bg from "./assets/Bg.png";
 import {Routes, Route} from "react-router-dom";
-// import User from "./pages/User";
-// import Hospital from "./components/Hospital";
+import User from "./components/User";
+import Org from "./components/Org"
 // import Services from "./components/Services";
 import Navbar from "./components/Navbar";
-// import Download from "./pages/download";
+ import Download from "./pages/Download";
 import "./App.css";
 //import Aggregate from "./components/Aggregate";
 function App() {
@@ -30,10 +30,9 @@ function App() {
     </div>
     </div>      
     }/>
-   { /*<Route path="/user" element={<User />}></Route>
-    <Route path="/hospital" element={<Hospital />}></Route>
+   <Route path="/user" element={<User />}></Route>
+    <Route path="/hospital" element={<Org />}></Route>
     <Route path="/get-app" element={<Download />}></Route>
-  <Route path="/aggregate" element={<Aggregate />}></Route>*/}
       </Routes>
     </div>
     </>
