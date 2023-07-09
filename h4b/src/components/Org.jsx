@@ -21,6 +21,7 @@ config({
 const Hospital = () => {
   const [user, setUser] = useState("");
   const [files, setFiles] = useState(null);
+  var cid;
   useEffect(() => {
     fcl.currentUser().subscribe((user) => {
       setUser(user?.addr);
@@ -48,7 +49,7 @@ const Hospital = () => {
 
     try {
       const client = makeStorageClient();
-      const cid = await client.put([files]);
+      cid = await client.put([files]);
       console.log("stored file with cid:", cid);
     } catch (error) {
       console.error("Error storing file:", error);
