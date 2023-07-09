@@ -9,11 +9,12 @@ import Org from "./components/Org"
 import Navbar from "./components/Navbar";
  import Download from "./pages/Download";
 import "./App.css";
+import Uptrain from "./pages/Uptrain";
 //import Aggregate from "./components/Aggregate";
 function App() {
   return (
     <>
-    <div className=" bg-cover bg-no-repeat bg-center h-screen  overflow-y-scroll hide-scrollbar "
+    <div className=" bg-cover bg-no-repeat bg-center h-screen overflow-y-scroll hide-scrollbar "
     style={{ backgroundImage: `url(${bg})` }}>
      
     <Routes>
@@ -33,6 +34,8 @@ function App() {
    <Route path="/user" element={<User />}></Route>
     <Route path="/hospital" element={<Org />}></Route>
     <Route path="/get-app" element={<Download />}></Route>
+    <Route path="/upload-trained-model" element={<Uptrain />}></Route>
+
       </Routes>
     </div>
     </>

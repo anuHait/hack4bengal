@@ -15,7 +15,7 @@ const Navbar = () => {
       </HashLink>
         <h2 className=' text-lg lg:text-xl'>/</h2>
         <HashLink to="#aboutus">
-        <a href="/" className=' text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>About & Contact</a>
+        <p className=' text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>About & Contact</p>
         </HashLink>
       </div>
       </div>  
