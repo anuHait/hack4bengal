@@ -16,7 +16,8 @@ def hello():
 @app.route("/model/<file>")
 def model(file):
     # testSet = pd.read_csv('Testing.csv')
-    fileloc = 'desktopApp/data/'+file
+    # fileloc = 'desktopApp/data/'+file
+    fileloc = "C:/Users/91629/Desktop/Training.csv"
     trainSet = pd.read_csv(fileloc)
 
     trainSet = trainSet.loc[:, ~trainSet.columns.str.contains('^Unnamed')]
