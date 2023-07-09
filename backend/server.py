@@ -14,7 +14,7 @@ def predictD2isease(s1,s2,s3,s4,s5):
     symptomNames=[s1,s2,s3,s4,s5]
     symptoms = convertSymptomsToArray(symptomNames)
 
-    with open('classifier.pkl', 'rb') as file:
+    with open('./backend/clfModel.pkl', 'rb') as file:
         model = pickle.load(file)
 
     diseasePrediction = model.predict([symptoms])
