@@ -9,6 +9,7 @@ import * as t from "@onflow/types";
 import { Web3Storage } from 'web3.storage'
 import { config } from "@onflow/fcl";
 import logo1 from "../assets/logo1.png";
+import createNFT from "../cadence/transactions/createNFT";
 import { useState, useEffect } from "react";
 fcl.config({
   "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn", // Endpoint set to Testnet
@@ -18,9 +19,10 @@ config({
   "app.detail.icon": logo1,
   "app.detail.title": "MEDIC.AI"
 })
-const Uptrain = () => {
+const Hospital = () => {
   const [user, setUser] = useState("");
   const [files, setFiles] = useState(null);
+  const [url, setUrl] = useState("");
   var cid;
   useEffect(() => {
     fcl.currentUser().subscribe((user) => {
@@ -50,11 +52,25 @@ const Uptrain = () => {
     try {
       const client = makeStorageClient();
       cid = await client.put([files]);
+      setUrl(`https://dweb.link/ipfs/${cid}`);
       console.log("stored file with cid:", cid);
+
+      const transactionId = await fcl.mutate({
+        cadence: createNFT,
+        proposer: fcl.currentUser,
+        payer: fcl.currentUser,
+        authorizations: [fcl.currentUser],
+        args: (arg, t) => [arg(url, t.String)],
+        limit: 50
+      })
+      console.log("Transaction submitted", transactionId)
     } catch (error) {
       console.error("Error storing file:", error);
     }
   };
+
+
+
   return (
     <div>
       <div
@@ -82,7 +98,7 @@ const Uptrain = () => {
         </h1>
         <div className="flex flex-row gap-6 lg:gap-16 justify-between items-center">
           <h1 className="font-bold text-3xl lg:text-5xl mb-4">
-            Upload trained 
+            Upload train
           </h1>
           {/* Connect wallet */}
           <div>
@@ -128,4 +144,4 @@ const Uptrain = () => {
   );
 };
 
-export default Uptrain;
+export default Hospital;
