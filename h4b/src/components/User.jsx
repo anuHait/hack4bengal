@@ -4,6 +4,7 @@ import Doctor from "../assets/Doctors-bro.png"
 import Navbar from "../components/Navbar";
 import options from "../components/options.json"
 import Select from 'react-select';
+import axios from 'axios';
 
 const User = () => {
     const [sym1,setSym1]=useState(null);
@@ -11,6 +12,26 @@ const User = () => {
     const [sym3,setSym3]=useState(null);
     const [sym4,setSym4]=useState(null);
     const [sym5,setSym5]=useState(null);
+
+    const handleSubmit=(e)=>{
+      try{
+        e.preventDefault()
+      sym1= replacespace(sym1)
+      sym2= replacespace(sym2)
+      sym3= replacespace(sym3)
+      sym4= replacespace(sym4)
+      sym5= replacespace(sym5)
+      const response = axios.get(`http://localhost:5000/${sym1}/${sym2}/${sym3}/${sym4}/${sym5}}`)
+      console.log(response)
+      }catch(err){
+        alert("Enter all the symptoms")
+      }
+    }
+
+    const replacespace = (str) => {
+      return str.replace(" ","_")
+    }
+
     return(
         <>
         <Navbar/>
@@ -59,6 +80,7 @@ const User = () => {
   placeholder="Select a symptom"
   className='w-64 h-12 rounded-xl py-3 px-2 mb-4'
 />
+<button type="button" onClick={(e)=>handleSubmit()}>Click Me!</button>
             </div>
             <img src={Doctor} alt="doctor" className='w-[34%] mr-40 ' />
 
