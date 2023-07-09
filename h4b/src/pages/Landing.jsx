@@ -15,7 +15,7 @@ const Landing = () => {
         <button className='p-3 bg-primary text-white font-semibold text-[0.8rem] lg:text-[1.4rem] rounded-lg hover:bg-[#1A31CC] transition duration-250'>Join as a Patient</button>
         </Link>
         <Link to='/get-app'>
-        <button className='p-3 bg-primary text-white font-semibold text-[0.8rem] lg:text-[1.4rem] rounded-lg'>Join as an Organistaion</button>
+        <button className='p-3 bg-primary text-white font-semibold text-[0.8rem] lg:text-[1.4rem] rounded-lg'>Join as  Organisation</button>
         </Link>
         </div>
       </div>
