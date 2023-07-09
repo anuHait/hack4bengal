@@ -13,7 +13,7 @@ import "./App.css";
 function App() {
   return (
     <>
-    <div className=" bg-cover bg-no-repeat bg-center h-screen  overflow-y-scroll hide-scrollbar "
+    <div className=" bg-cover bg-no-repeat bg-center h-screen overflow-y-scroll hide-scrollbar "
     style={{ backgroundImage: `url(${bg})` }}>
      
     <Routes>
