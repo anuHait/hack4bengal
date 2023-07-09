@@ -30,7 +30,7 @@ const download = () => {
     <button className='p-2 flex gap-3 bg-primary justify-center items-center mb-4 text-white font-semibold text-[1rem] lg:text-[1.4rem] rounded-lg w-[14rem]'>Download <ImDownload className='text-white text-lg'/></button>
     <li>If you already have downloaded our application <Link to="/hospital" className='text-primary font-semibold'>click here</Link> to start training your model</li>
     </ul>
-  <img src={hero} className='w-56'></img>
+  <img src={hero} alt='download' className='w-56'></img>
   </div>
   
   </div>
