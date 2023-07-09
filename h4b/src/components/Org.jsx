@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import grad from "../assets/grad.png";
 import * as fcl from "@onflow/fcl";
 import * as t from "@onflow/types";
-//import axios from "axios";
+import { Web3Storage } from 'web3.storage'
 import { config } from "@onflow/fcl";
 import logo1 from "../assets/logo1.png";
 import { useState, useEffect } from "react";
@@ -26,14 +26,34 @@ const Hospital = () => {
       setUser(user?.addr);
     });
   }, []);
-
-
-
-  const handleSubmit = async (e) => {
-    console.log("files", files);
-    
+ const atoken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDQ0YTc2NkQxNDc5M0VEQmY3NEFhNzQxMTI4Mzk3QUI0QjJiRGVBMmEiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODg4OTk2MTE3MTQsIm5hbWUiOiJhbnVzbWl0YSJ9.XlnnZQnVMqpViE-nd1yih8K00f-OlC3eULH7WOR0bUw"
+  function getAccessToken () {
+    return atoken
+  }
+  
+  function makeStorageClient () {
+    return new Web3Storage({ token: getAccessToken() })
+  }
+  
+  const handleFileChange = (e) => {
+    setFiles(e.target.files[0]);
   };
 
+  const handleSubmit = async () => {
+    if (!files) {
+      console.error("No file selected");
+      return;
+    }
+    console.log("file", files);
+
+    try {
+      const client = makeStorageClient();
+      const cid = await client.put([files]);
+      console.log("stored file with cid:", cid);
+    } catch (error) {
+      console.error("Error storing file:", error);
+    }
+  };
   return (
     <div>
       <div
@@ -65,7 +85,6 @@ const Hospital = () => {
           </h1>
           {/* Connect wallet */}
           <div>
-            {/*    <h4>User add:{user}</h4>*/}
             <button
               onClick={() => fcl.authenticate()}
               className="p-3 bg-primary text-white font-semibold text-[0.8rem] lg:text-[1.4rem] rounded-lg"
@@ -89,7 +108,7 @@ const Hospital = () => {
               type="file"
               id="file-upload"
               className="hidden"
-              onChange={(e) => setFiles(e.target.files[0])}
+              onChange={handleFileChange}
             />
           </div>
         </div>
