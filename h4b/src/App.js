@@ -6,7 +6,7 @@ import {Routes, Route} from "react-router-dom";
 // import User from "./pages/User";
 // import Hospital from "./components/Hospital";
 // import Services from "./components/Services";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 // import Download from "./pages/download";
 import "./App.css";
 //import Aggregate from "./components/Aggregate";
@@ -21,7 +21,7 @@ function App() {
     path="/"
     element={
     <div>
-      
+    <Navbar/>  
     <div className="m-9 ">    
     <Landing />
     <DownBar />
