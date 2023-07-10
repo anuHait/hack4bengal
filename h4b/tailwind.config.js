@@ -12,6 +12,16 @@ module.exports = {
       colors: {
         primary: '#364BDB;',
       },
+      keyframes: {
+        float: {
+            '0%': { transform: 'translatey(0px)' },
+            '50%': { transform: 'translatey(-15px)' },
+            '100%': { transform: 'translatey(0px)' },
+        },
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

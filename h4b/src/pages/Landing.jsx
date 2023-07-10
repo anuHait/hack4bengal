@@ -20,9 +20,9 @@ const Landing = () => {
       </div>
       <div>
       <div className='flex justify-center items-center shadow-primary '>
-      <PiWheelchairBold className='text-5xl bg-purple-400 rounded-lg p-2 shadow-xl mt-48 z-10 text-white' />
-      <img src={hero} alt='landing_page' className=' h-full lg:w-[53%]' />
-      <FaSyringe className='text-5xl bg-white rounded-lg p-2 shadow-xl text-purple-400' />
+      <PiWheelchairBold className=' animate-float text-5xl bg-purple-400 rounded-lg p-2 shadow-xl mt-48 z-10 text-white' />
+      <img src={hero} alt='landing_page' className=' bg-cover h-full lg:w-[53%]' />
+      <FaSyringe className=' animate-float text-5xl bg-white rounded-lg p-2 shadow-xl text-purple-400' />
       </div>
       </div>
     </div>
