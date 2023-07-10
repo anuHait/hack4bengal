@@ -1,5 +1,4 @@
 import React from 'react'
-import grad from "../assets/grad.png"
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png"
@@ -12,11 +11,11 @@ const Navbar = () => {
     </Link>
       <div className=' flex flex-row gap-1  lg:gap-4 mr-5 lg:mr-10'>
       <HashLink to="#service">
-      <p className=' text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>Services</p>
+      <p className=' text-md text-gray-700 hover:text-black lg:text-lg font-poppins'>Services</p>
       </HashLink>
-        <h2 className=' text-lg lg:text-xl'>/</h2>
+        <h2 className=' text-md lg:text-xl'>/</h2>
         <HashLink to="#aboutus">
-        <p className=' text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>About & Contact</p>
+        <p className=' text-md text-gray-700 hover:text-black lg:text-lg font-poppins'>About & Contact</p>
         </HashLink>
       </div>
       </div>  
