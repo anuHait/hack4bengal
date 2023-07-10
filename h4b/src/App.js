@@ -5,7 +5,7 @@ import bg from "./assets/Bg.png";
 import {Routes, Route} from "react-router-dom";
 import User from "./components/User";
 import Org from "./components/Org"
-// import Services from "./components/Services";
+import Services from "./components/Services";
 import Navbar from "./components/Navbar";
  import Download from "./pages/Download";
 import "./App.css";
@@ -26,7 +26,7 @@ function App() {
     <div className="m-9 ">    
     <Landing />
     <DownBar />
-    {/*<Services/>*/}
+    <Services/>
     <Aboutus />
     </div>
     </div>      
