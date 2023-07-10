@@ -17,8 +17,8 @@ def hello():
 def model(file):
     # testSet = pd.read_csv('Testing.csv')
     # fileloc = 'desktopApp/data/'+file
-    fileloc = "C:/Users/91629/Desktop/Training.csv"
-    trainSet = pd.read_csv(fileloc)
+    # fileloc = "C:/Users/91629/Desktop/Training.csv"
+    trainSet = pd.read_csv(file)
 
     trainSet = trainSet.loc[:, ~trainSet.columns.str.contains('^Unnamed')]
     # testSet = testSet.loc[:, ~testSet.columns.str.contains('^Unnamed')]
@@ -42,9 +42,8 @@ def model(file):
     # print(acuScore)
     
     import joblib
-    model_file = 'desktopApp\model-'+file+'.pkl'
-    joblib.dump(clf, model_file)
     model_file = 'model-'+file+'.pkl'
+    joblib.dump(clf, model_file)
     return send_file(model_file, mimetype='application/octet-stream', as_attachment=True)
     
 
