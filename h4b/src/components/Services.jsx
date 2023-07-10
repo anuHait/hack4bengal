@@ -1,13 +1,19 @@
 import React from "react";
 const Services = () => {
   return (
-    <div className=" " id="service">
-      <h1 className="font-bold text-center text-xl lg:text-4xl mb-4">
+    <div className=" mt-10 " id="service">
+      <h1 className="font-bold text-center text-2xl lg:text-4xl mb-4">
         Services.
       </h1>
-      <div className="w-[60%] h-[1px] mx-auto bg-gray-800 mb-12"></div>
-      <div className="grid grid-row bg-primary gap-10 lg:grid-cols-3 "></div>
-      <div className="grid grid-row bg-primary gap-10 lg:grid-cols-3 "></div>
+      <div className="w-[60%] h-[1px] mx-auto bg-gray-800 mb-16"></div>
+      <div className="flex flex-row gap-12 w-max mb-12 mx-auto lg:grid-cols-3 ">
+        <div className=" w-64 h-48 border-2 border-black bg-white rounded-2xl"></div>
+        <div className=" w-64 h-48 border-2 border-black bg-white rounded-2xl"></div>
+        <div className=" w-64 h-48 border-2 border-black bg-white rounded-2xl"></div>
+      </div>
+      <div className="flex flex-row gap-12 w-max mx-auto lg:grid-cols-3 ">
+        <div className=" w-64 h-48 border-2 border-black bg-white rounded-2xl"></div>
+      </div>
     </div>
   );
 };
