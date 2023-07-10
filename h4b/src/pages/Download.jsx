@@ -28,7 +28,9 @@ const download = () => {
   <div className='flex flex-col-reverse lg:flex-row gap-16 m-10'>
     <ul className='flex flex-col gap-3 lg:mr-10 list-decimal text-xl'>
       <li className='font-poppins text-lg'>To start training your model, click below to download our application.</li>
-      <button className='p-2 flex gap-3 bg-primary hover:bg-[#1A31CC] transition duration-200 justify-center items-center mb-4 text-white font-semibold text-[1rem] lg:text-[1.4rem] rounded-lg w-[14rem]'>Download <ImDownload className='text-white text-lg'/></button>
+      <a href="https://storage.cloud.google.com/medic-ai-bucket/mysetup.exe">
+      <button className='p-2 flex gap-3 bg-primary hover:bg-[#1A31CC] transition duration-200 justify-center items-center mb-4 text-white font-semibold text-[1rem] lg:text-[1.4rem] rounded-lg w-[14rem]' >Download <ImDownload className='text-white text-lg'/></button>
+      </a>
       <li className='font-poppins text-lg'> After downloading it, start the application by <span className='font-semibold'>Run as an administrator.</span></li>
       <li className='font-poppins text-lg'>If you have already downloaded our application <Link to="/hospital" className='text-primary font-semibold'>click here</Link> to start training your model.</li>
     </ul>

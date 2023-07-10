@@ -11,6 +11,8 @@ const Hospital = () => {
   const [files, setFiles] = useState(null);
   const handleFileChange = (e) => {
     setFiles(e.target.files[0]);
+    alert("Please start the server if haven't already!");
+
   };
   const pause = async (milliseconds) => {
     await new Promise((resolve) => setTimeout(resolve, milliseconds));
