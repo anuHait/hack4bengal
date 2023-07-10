@@ -29,12 +29,8 @@ const Hospital = () => {
       <h1 className='font-bold text-2xl font-poppins'>EDIC.<span className='text-primary'>AI</span></h1>
     </Link>
         <div className=" flex flex-row gap-4 mr-4 lg:mr-10">
-          <Link to="/">
-            <p className="text-lg text-gray-700 hover:text-black lg:text-lg font-poppins">Services</p>
-          </Link>
-          <h2 className=" text-xl">/</h2>
-          <Link to="/">
-            <p className="text-lg text-gray-700 hover:text-black lg:text-lg font-poppins">About & Contact</p>
+          <Link to="/upload-trained-model">
+            <p className="text-lg text-gray-700 hover:text-black lg:text-lg font-poppins">Get NFT's</p>
           </Link>
         </div>
       </div>

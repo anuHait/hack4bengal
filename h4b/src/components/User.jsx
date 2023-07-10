@@ -12,11 +12,7 @@ const User = () => {
   const [sym3, setSym3] = useState("");
   const [sym4, setSym4] = useState("");
   const [sym5, setSym5] = useState("");
-  // console.log(sym1);
-  //     console.log(sym2);
-  //     console.log(sym3);
-  //     console.log(sym4);
-  //     console.log(sym5);
+  const [dis,setDis]=useState("");
   const handleSubmit = (e) => {
     try {
       //e.preventDefault();
@@ -38,13 +34,13 @@ const User = () => {
         .then(function (response) {
           // Handle success
           console.log(response.data);
+          setDis(response.data);
         })
         .catch(function (error) {
           // Handle error
           console.log(error);
         });
     } catch (err) {
-      //alert('Enter all the symptoms');
       console.error("Error:", err);
     }
   };

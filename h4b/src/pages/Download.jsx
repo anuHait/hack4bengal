@@ -17,8 +17,8 @@ const download = () => {
         <p className='text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>Train Your Models</p>
       </Link>
       <h2 className=' text-lg lg:text-xl'>/</h2>
-      <Link to='/aggregate'>
-        <p className='text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>Aggregate</p>
+      <Link to='/upload-trained-model'>
+        <p className='text-lg text-gray-700 hover:text-black lg:text-lg font-poppins'>Get NFT's</p>
       </Link>
     </div>
   </div>    
