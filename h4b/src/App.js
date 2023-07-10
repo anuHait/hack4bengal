@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
  import Download from "./pages/Download";
 import "./App.css";
 import Uptrain from "./pages/Uptrain";
+//import Btn from "./components/Btn";
 import Aggregate from "./components/Aggregate";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
     element={
     <div>
     <Navbar/>  
+   
     <div className="m-9 ">    
     <Landing />
     <DownBar />
