@@ -10,7 +10,7 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/predict/<s1>/<s2>/<s3>/<s4>/<s5>')
-def predictD2isease(s1,s2,s3,s4,s5):
+def predictDisease(s1,s2,s3,s4,s5):
     s1.replace(" ", "_")
     s2.replace(" ", "_")
     s3.replace(" ", "_")
@@ -19,7 +19,7 @@ def predictD2isease(s1,s2,s3,s4,s5):
     symptomNames=[s1,s2,s3,s4,s5]
     symptoms = convertSymptomsToArray(symptomNames)
 
-    with open('./backend/clfModel.pkl', 'rb') as file:
+    with open('clfModel.pkl', 'rb') as file:
         model = pickle.load(file)
 
     diseasePrediction = model.predict([symptoms])
