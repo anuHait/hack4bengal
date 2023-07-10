@@ -1,4 +1,4 @@
-//import Aboutus from "./components/Aboutus";
+import Aboutus from "./components/Aboutus";
 import Landing from "./pages/Landing";
 import DownBar from "./components/Downbar";
 import bg from "./assets/Bg.png";
@@ -26,8 +26,8 @@ function App() {
     <div className="m-9 ">    
     <Landing />
     <DownBar />
-    {/*<Services/>
-    <Aboutus />*/}
+    {/*<Services/>*/}
+    <Aboutus />
     </div>
     </div>      
     }/>

@@ -56,9 +56,8 @@ const User = () => {
     <>
       <Navbar />
       <div className=" w-[90%] m-auto mt-6">
-        <h1 className="font-bold text-xl lg:text-4xl mb-4">Take your test.</h1>
-        <div className="w-full h-[1px] bg-gray-800 mb-6"></div>
-        <h2 className=" text-white w-max py-2 px-3 rounded-lg text-md font-semibold font-poppins bg-primary">
+        <h1 className="font-bold text-xl lg:text-4xl mb-6 ml-2">Take your test.</h1>
+        <h2 className=" text-white w-max py-2 px-3 rounded-3xl text-sm font-regular font-poppins bg-primary ml-2">
           Enter your symptoms
         </h2>
 
@@ -110,7 +109,7 @@ const User = () => {
             <button
               type="button"
               onClick={handleSubmit}
-              className="py-2 px-4 bg-primary font-poppins text-white font-regular text-md lg:text-[1.4rem] rounded-lg hover:bg-[#1A31CC] transition duration-250"
+              className="py-3 mx-2 bg-primary font-poppins text-white font-regular text-sm lg:text-[1.4rem] rounded-lg hover:bg-[#1A31CC] transition duration-250"
             >
               Click Me!
             </button>
