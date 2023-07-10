@@ -12,7 +12,7 @@ const Aggregate = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     // Perform authentication logic here
-    if (username === 'admin_ai' && password === 'anath4b') {
+    if (username === 'admin' && password === '123456') {
       setIsLoggedIn(true);
       setIsOpen(false);
     } else {
@@ -56,8 +56,9 @@ const Aggregate = () => {
     <input type='file' multiple onChange={handlChange} className='hidden' id="file-upload"></input>
   </div>
 </div>
-
+<a href='https://storage.googleapis.com/medic-ai-bucket/aggregated_model.pkl'>
 <button onClick={handleUpload} className='p-3 bg-primary font-poppins text-white font-regular text-lg lg:text-[1.2rem] rounded-lg hover:bg-[#1A31CC] transition duration-250'>Aggregate</button>
+</a>
 </div>
     {isOpen && (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
